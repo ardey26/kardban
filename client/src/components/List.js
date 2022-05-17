@@ -28,18 +28,18 @@ const List = () => {
     
     return (
         <> 
-            <div class="py-5">
-                <div class="container">
-                    <div class="row">
+            <div className="py-2">
+                <div className="container">
+                    <div className="row">
                         
                         {list.map((item) => (
                             
                             <div className='col-md-4 col-sm-12 mt-5'>
-                            <div className="card h-100 p-5 align-items-center">
-                                <div className="card-block">
-                                    <div className='col'>
-                                        <div className='row card-text p-4'> {item.description} </div>
-                                        <div className='row mt-5 mx-5'>
+                            <div className="card p-5 align-items-center" style={{height: "400px"}}>
+                                <div className="card-block h-100">
+                                    <div className='col h-100'>
+                                        <div className='row card-text p-4' style={{height: "300px"}}> {item.description} </div>
+                                        <div className='row mx-5 justify-content-around'>
                                         <div className='card-link'> <Edit item={item}/></div>
                                         <div className='card-link'> <Delete item={item}/></div>
                                         </div>  
